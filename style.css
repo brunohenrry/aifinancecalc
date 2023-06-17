@@ -1,0 +1,234 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Poppins', Arial, sans-serif;
+  }
+  
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px; /* Ajuste a altura conforme necessário */
+  }
+  
+  header h1 {
+    font-size: 36px;
+    text-align: center;
+    margin: 0;
+  }
+  
+  
+  header button {
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+  }
+  
+  .buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  button {
+    background-color: #4681f4;
+    border: none;
+    color: #fff;
+    font-size: 24px;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  button:hover {
+    background-color: #4681f4;
+  }
+  
+  .calculator {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 400px;
+    display: none;
+  }
+  
+  .calculator input {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+  }
+  
+  .calculator button {
+    display: block;
+    margin: 10px auto;
+  }
+
+  /* CSS para animações */
+@keyframes buttonClick {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  /* Restante do seu CSS */
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Poppins', Arial, sans-serif;
+  }
+  
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+  
+  header h1 {
+    font-size: 36px;
+    text-align: center;
+    margin: 0;
+  }
+  
+  header button {
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    animation-duration: 0.3s; /* Duração da animação */
+    animation-timing-function: ease-in-out; /* Curva de aceleração da animação */
+  }
+  
+  header button:hover,
+  header button:focus {
+    animation-name: buttonClick; /* Nome da animação */
+  }
+  
+  /* Resto do seu CSS... */
+
+  /* Animação para as caixas */
+@keyframes boxAppear {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Animação para o botão da A.I. */
+  @keyframes aiButtonClick {
+    0% {
+      border-color: #4681f4;
+      color: #4681f4;
+      background-color: transparent;
+    }
+    100% {
+      border-color: #4681f4;
+      color: #fff;
+      background-color: #4681f4;
+    }
+  }
+  
+  /* Restante do seu CSS */
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Poppins', Arial, sans-serif;
+  }
+  
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+  
+  header h1 {
+    font-size: 36px;
+    text-align: center;
+    margin: 0;
+  }
+  
+  header button {
+    background-color: transparent;
+    border: 2px solid #4681f4;
+    color: #4681f4;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 5px 10px;
+    margin: 0 10px;
+    animation-duration: 0.3s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards; /* Para manter o estado final da animação */
+  }
+  
+  header button:hover,
+  header button:focus {
+    animation-name: aiButtonClick;
+  }
+  
+  main .calculator {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 400px;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards; /* Para manter o estado final da animação */
+    display: none;
+  }
+  
+  .main .calculator.show {
+    display: block;
+    animation-name: boxAppear;
+  }
+  
+  /* Resto do seu CSS... */
+
+  .result-alert {
+    background-color: #f1f1f1;
+    color: #333;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+  }
+  

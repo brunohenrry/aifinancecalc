@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Calculadora Financeira</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webkit-speech-recognition/0.1.0/speech-recognition.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Calculadora Financeira</h1>
+      <button id="ai-button">A.I</button>
+      <div id="status-message"></div>
+      <div id="spoken-command"></div>
+      <div id="result-container"></div>
+    </header>
+    <main>
+      <div class="buttons">
+        <button id="juros-simples-btn">Juros Simples</button>
+        <button id="juros-compostos-btn">Juros Compostos</button>
+        <button id="valor-futuro-btn">Valor Futuro</button>
+        <button id="valor-presente-btn">Valor Presente</button>
+      </div>
+      <div class="calculator"></div>
+    </main>
+    <script src="app.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
